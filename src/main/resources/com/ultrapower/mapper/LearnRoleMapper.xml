@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ultrapower.unite.common.mapper.LearnRoleMapper">
+    <sql id="role_columns">
+        id,role_name as roleName,note
+    </sql>
+    <resultMap id="roleRestMap" type="learnRole">
+        <id property="id" column="id"/>
+        <result property="roleName" column="role_name"/>
+        <result property="note" column="note"/>
+    </resultMap>
+    <select id="queryLearnRole" resultType="learnRole">
+        select <include refid="role_columns"/> from learn_role where id = #{id}
+    </select>
+
+    <select id="queryLearnRoleLike" parameterType="roleParams" resultMap="roleRestMap">
+        select id,role_name,note from learn_role where 1=1
+        <if test="roleName != null and roleName != ''">
+            and role_name like concat('%',#{roleName,jdbcType=VARCHAR},'%') and note like concat('%',#{note,jdbcType=VARCHAR},'%')
+        </if>
+    </select>
+
+    <insert id="insertRole" parameterType="learnRole" useGeneratedKeys="true" keyProperty="id">
+        <selectKey keyProperty="id" resultType="long" order="BEFORE">
+            select if(max(id) is null,1,max(id)+3) as newId from learn_role
+        </selectKey>
+        insert into learn_role(role_name,note) values(#{roleName,javaType=string,jdbcType=VARCHAR},#{note})
+    </insert>
+
+    <update id="updateRole" parameterType="learnRole">
+        update learn_role
+        <set>
+            <if test="roleName != null and roleName != ''">
+                role_name = #{roleName},
+            </if>
+            <if test="note != null and note != ''">
+                note = #{note}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>
