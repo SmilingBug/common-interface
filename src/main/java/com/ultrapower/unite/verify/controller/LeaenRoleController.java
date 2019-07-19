@@ -27,4 +27,9 @@ public class LeaenRoleController {
     public void test() {
         
     }
+
+    public void test2() {
+        String myName = "yqk";
+        System.out.println(myName);
+    }
 }
