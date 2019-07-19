@@ -38,9 +38,14 @@ public class LeaenRoleController {
         String myName = "hhhhhh";
         System.out.println(myName);
     }
-    
+
     public void test3() {
         String myName = "jcg";
         System.out.println(myName);
+        try {
+            int i = 1/0;
+        }catch (Exception e) {
+            System.out.println("fix bug");
+        }
     }
 }
