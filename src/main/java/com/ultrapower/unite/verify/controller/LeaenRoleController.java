@@ -22,4 +22,9 @@ public class LeaenRoleController {
     public LearnRole queryLearnRole(Long id){
         return learnRoleService.queryLearnRole(id);
     }
+
+
+    public void test() {
+        
+    }
 }
