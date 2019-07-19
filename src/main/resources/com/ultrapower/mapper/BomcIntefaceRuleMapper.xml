@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ultrapower.unite.common.mapper.BomcIntefaceRuleMapper">
+
+    <resultMap id="bomcIntefaceRuleMap" type="bomcIntefaceRule">
+        <id property="pid" column="pid"/>
+        <result property="wfId" column="wf_id"/>
+        <result property="outSystem" column="out_system"/>
+        <result property="wfStep" column="wf_step"/>
+        <result property="checkRule" column="check_rule" jdbcType="CLOB"/>
+        <result property="callPluginsUrl" column="call_plugins_url"/>
+        <result property="checkType" column="check_type"/>
+    </resultMap>
+    <select id="findBomcIntefaceRule" parameterType="map" resultMap="bomcIntefaceRuleMap">
+        select pid,wf_id,out_system,wf_step,check_rule,call_plugins_url,check_type from BOMC_INTEFACE_RULE where 1=1
+        <if test="wfId != null and wfId != ''">
+            and wf_id = #{wfId}
+        </if>
+        <if test="outSystem != null and outSystem != ''">
+            and out_system = #{outSystem}
+        </if>
+        <if test="wfStep != null and wfStep != ''">
+            and wf_step = #{wfStep}
+        </if>
+        <if test="checkType != null and checkType != ''">
+            and check_type = #{checkType}
+        </if>
+    </select>
+
+</mapper>
