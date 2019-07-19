@@ -33,8 +33,4 @@ public class LeaenRoleController {
         System.out.println(myName);
     }
 
-    public void test3() {
-        String myName = "jcg";
-        System.out.println(myName);
-    }
 }
