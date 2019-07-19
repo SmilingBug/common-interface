@@ -32,4 +32,9 @@ public class LeaenRoleController {
         String myName = "yqk";
         System.out.println(myName);
     }
+
+    public void test5() {
+        String myName = "hhhhhh";
+        System.out.println(myName);
+    }
 }
