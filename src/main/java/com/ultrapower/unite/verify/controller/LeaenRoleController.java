@@ -25,7 +25,7 @@ public class LeaenRoleController {
 
 
     public void test() {
-        
+
     }
 
     public void test2() {
@@ -33,8 +33,14 @@ public class LeaenRoleController {
         System.out.println(myName);
     }
 
+
     public void test5() {
         String myName = "hhhhhh";
+        System.out.println(myName);
+    }
+    
+    public void test3() {
+        String myName = "jcg";
         System.out.println(myName);
     }
 }
