@@ -50,6 +50,8 @@ public class LeaenRoleController {
     public void test5() {
         String myName = "hhhhhh";
         System.out.println(myName);
+        Map map = new HashMap();
+        map.put("1","232");
     }
 
 
@@ -58,6 +60,10 @@ public class LeaenRoleController {
         String[] arr = new String[]{"a","b"};
         for (int j = 0; j < i;j++) {
             System.out.println(j);
+            Map map = new HashMap();
+            map.put("1","232");
+            Map map33 = new HashMap();
+            map.put("1","232");
         }
     }
 
