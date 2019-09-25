@@ -70,6 +70,9 @@ public class LeaenRoleController {
         List djks = new ArrayList(16);
         djks.add("23");// fhjsfhjsfhsjasd
         djks.add("56");//hdsajdh
+        djks.add("23");
+        System.out.println(11);
+        System.out.println(22);
         for(int i = 0; i < 10; i++) {
             System.out.println(i);
             System.out.println(i);
