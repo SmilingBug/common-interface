@@ -60,4 +60,9 @@ public class LeaenRoleController {
         for(int i = 0; i < 10; i++) {
         }
     }
+
+    public void test7() {
+        for(int i = 0; i < 10; i++) {
+        }
+    }
 }
