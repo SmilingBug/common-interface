@@ -25,7 +25,7 @@ public class LeaenRoleController {
 
 
     public void test() {
-        
+
     }
 
     public void test2() {
@@ -37,4 +37,10 @@ public class LeaenRoleController {
         String myName = "hhhhhh";
         System.out.println(myName);
     }
+
+    public void test6() {
+        for(int i = 0; i < 10; i++) {
+        }
+    }
+
 }
