@@ -63,6 +63,14 @@ public class LeaenRoleController {
 
     public void test6() {
         for(int i = 0; i < 10; i++) {
+            while (true) {
+                Map map = new HashMap();
+                map.put("1","232");
+                map.put("1","232");
+                map.put("1","232");
+                map.put("1","232");
+                map.put("1","232");
+            }
         }
     }
 
