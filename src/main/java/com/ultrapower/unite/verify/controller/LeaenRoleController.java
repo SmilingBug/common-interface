@@ -70,6 +70,12 @@ public class LeaenRoleController {
         List djks = new ArrayList(16);
         djks.add("23");
         for(int i = 0; i < 10; i++) {
+            System.out.println(i);
+            System.out.println(i);
+            System.out.println(i);
+            System.out.println(i);
+            System.out.println(i);
+            System.out.println(i);
         }
         int i = 0;
         while (true) {
