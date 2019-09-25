@@ -25,7 +25,8 @@ public class LeaenRoleController {
 
 
     public void test() {
-        
+        System.out.println("i am test");
+        this.queryLearnRole(new Long(1));
     }
 
     public void test2() {
@@ -36,5 +37,13 @@ public class LeaenRoleController {
     public void test5() {
         String myName = "hhhhhh";
         System.out.println(myName);
+    }
+
+    public void testforconflict() {
+        int i = 8;
+        String[] arr = new String[]{"a","b"};
+        for (int j = 0; j < i;j++) {
+            System.out.println(j);
+        }
     }
 }
