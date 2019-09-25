@@ -6,6 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * @program: common-interface
  * @description:角色控制器
@@ -62,7 +67,18 @@ public class LeaenRoleController {
     }
 
     public void test7() {
+        List djks = new ArrayList(16);
+        djks.add("23");
         for(int i = 0; i < 10; i++) {
+        }
+        int i = 0;
+        while (true) {
+            Map map = new HashMap();
+            map.put("1","232");
+            map.put("1","232");
+            map.put("1","232");
+            map.put("1","232");
+            map.put("1","232");
         }
     }
 }
