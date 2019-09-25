@@ -39,11 +39,17 @@ public class LeaenRoleController {
         System.out.println(myName);
     }
 
+
     public void testforconflict() {
         int i = 8;
         String[] arr = new String[]{"a","b"};
         for (int j = 0; j < i;j++) {
             System.out.println(j);
+        }
+    }
+
+    public void test6() {
+        for(int i = 0; i < 10; i++) {
         }
     }
 }
