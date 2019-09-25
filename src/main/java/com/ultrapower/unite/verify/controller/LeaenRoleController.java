@@ -29,6 +29,14 @@ public class LeaenRoleController {
         this.queryLearnRole(new Long(1));
     }
 
+    /**
+     * ajsdjahdjdhjsadsad
+     */
+    public void solve() {
+        System.out.println("123");
+        this.learnRoleService.hashCode();
+    }
+
     public void test2() {
         String myName = "yqk";
         System.out.println(myName);
